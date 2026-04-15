@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us - Cars Dealership</title>
+    <title>About Us - Best Cars Dealership</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">   <!-- Add this if your project has a custom style.css -->
+    <style>
+        .team-member {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Cars Dealership</a>
+        <a class="navbar-brand" href="/">Best Cars Dealership</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
@@ -16,17 +30,63 @@
             </ul>
         </div>
     </nav>
+
     <div class="container mt-5">
-        <h1>About Us</h1>
-        <p>Welcome to Best Cars Dealership. We provide top quality cars nationwide.</p>
+        <h1 class="text-center mb-4">About Us</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="lead text-center">
+                    Welcome to <strong>Best Cars Dealership</strong>, a national car retailer with branches across the United States. 
+                    We are committed to providing top-quality vehicles, exceptional customer service, and a seamless car-buying experience. 
+                    With over 15 years in the industry, our team of automotive experts works tirelessly to bring you the best deals on new and pre-owned cars.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5 mb-4">Meet Our Team</h2>
+        
         <div class="row">
-            <div class="col-md-4">
-                <img src="/static/ceo.jpg" alt="CEO" class="img-fluid">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 team-member">
+                <img src="https://picsum.photos/id/64/300/300" alt="CEO" class="img-fluid">
                 <h3>Jane Doe</h3>
-                <p>Role: CEO</p>
-                <p>Email: jane.doe@carsdealership.com</p>
+                <p><strong>CEO & Founder</strong></p>
+                <p>With 20+ years in the automotive industry, Jane leads our vision to revolutionize car retail.</p>
+                <p>Email: <a href="mailto:jane.doe@bestcars.com">jane.doe@bestcars.com</a></p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-4 team-member">
+                <img src="https://picsum.photos/id/201/300/300" alt="CTO" class="img-fluid">
+                <h3>John Smith</h3>
+                <p><strong>Chief Technology Officer</strong></p>
+                <p>John oversees all digital transformation and ensures our online platform delivers the best user experience.</p>
+                <p>Email: <a href="mailto:john.smith@bestcars.com">john.smith@bestcars.com</a></p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-md-4 team-member">
+                <img src="https://picsum.photos/id/669/300/300" alt="Sales Director" class="img-fluid">
+                <h3>Maria Garcia</h3>
+                <p><strong>Director of Sales</strong></p>
+                <p>Maria brings passion and expertise in customer relations and has helped expand our dealership network nationwide.</p>
+                <p>Email: <a href="mailto:maria.garcia@bestcars.com">maria.garcia@bestcars.com</a></p>
+            </div>
+
+            <!-- Team Member 4 (Optional - add more if you want) -->
+            <div class="col-md-4 team-member">
+                <img src="https://picsum.photos/id/1005/300/300" alt="Marketing Lead" class="img-fluid">
+                <h3>David Kim</h3>
+                <p><strong>Marketing Manager</strong></p>
+                <p>David crafts innovative campaigns that connect us with car enthusiasts across the country.</p>
+                <p>Email: <a href="mailto:david.kim@bestcars.com">david.kim@bestcars.com</a></p>
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
